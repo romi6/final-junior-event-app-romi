@@ -6,7 +6,7 @@ import React from "react";
 export default function EventSubmit() {
   const [eventData, setEventData] = React.useState({
     title: "",
-    date: "10-10-2023",
+    date: "2023-10-10",
     description: "",
   });
   const router = useRouter();
@@ -23,7 +23,7 @@ export default function EventSubmit() {
         }
       })
       .then(() => {
-        setEventData({ title: "", date: "10-10-2023", description: "" });
+        setEventData({ title: "", date: "2023-10-10", description: "" });
         router.refresh();
       })
       .catch((error) => console.error(error));
